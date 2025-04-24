@@ -1,0 +1,62 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+db.sqlite3
+/media
+/static
+*.sqlite3
+
+# Environment Variables
+.env
+.env.*
+
+# Virtual environment
+venv/
+venv/*
+env/
+env/*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# JetBrains IDEs (PyCharm, etc.)
+.idea/
+
+# VSCode
+.vscode/
+
+# Dependency directories
+node_modules/
+dist/
+
+# Frontend
+/angular/
+
+# Outputs
+/backend/outputs/
+
+
+# Other IDEs
+*.sublime-workspace
+*.sublime-project
+
+# Configuration files
+*.log
+*.bak
+*.swp
+
+# Media files (ignore large files that are uploaded, can be large)
+uploads/
+/media/uploads/
