@@ -1,0 +1,23 @@
+<div class="upload-container">
+    <h2>Upload Image or Video</h2>
+  
+    <form (submit)="uploadImage(); $event.preventDefault()">
+
+      <input type="file" (change)="onFileSelected($event)" accept="image/*,video/*" required />
+      
+      <button type="submit" [disabled]="!selectedFile">Upload</button>
+    </form>
+  
+    <div *ngIf="processedUrl">
+      <h3>Given Input:</h3>
+      <img *ngIf="isImage" [src]="processedUrl" alt="Processed" style="max-width: 100%;" />
+      <video *ngIf="!isImage" [src]="processedUrl" controls style="max-width: 100%;"></video>
+    </div>
+
+    <div *ngIf="finalProcessedUrl">
+      <h4>Processed Output:</h4>
+      <img [src]="finalProcessedUrl" alt="Processed Image" width="300" />
+    </div>
+    
+  </div>
+  
